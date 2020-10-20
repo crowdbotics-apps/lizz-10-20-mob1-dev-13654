@@ -1,0 +1,2 @@
+json_key_file("") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("com.lizz_10_20_mob1_dev_13654") # e.g. com.krausefx.app
