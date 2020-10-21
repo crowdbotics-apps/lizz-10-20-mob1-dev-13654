@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Switch_7: true }
 
   render = () => (
     <View>
@@ -34,8 +34,12 @@ export default class Blank extends React.Component {
       <Button
         title="Press me!"
         color="#dd33ff"
-        style={styles.Button_5}
         onPress={() => alert("Pressed!")}
+      />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        value={this.state.Switch_7}
+        onValueChange={nextChecked => this.setState({ Switch_7: nextChecked })}
       />
     </View>
   )
@@ -46,7 +50,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Text_3: { textAlign: "center" },
-  Button_5: { width: "100%", fontSize: 12, textAlign: "center" }
+  Button_5: { width: "100%", fontSize: 12, textAlign: "center" },
+  View_1: {},
+  Text_3: { textAlign: "center" },
+  Button_5: {},
+  Switch_7: {}
 })
